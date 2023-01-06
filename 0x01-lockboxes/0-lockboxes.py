@@ -12,7 +12,6 @@ def canUnlockAll(boxes):
     x = len(boxes)
     opened_box = [1] + [0] * (x - 1)
 
-
     if i == 0:
         return True
     while stack is not None:
@@ -21,7 +20,7 @@ def canUnlockAll(boxes):
             if b > 0 and b < x and opened_box[b] == 0:
                 opened_box[b] = 1
                 arr.append[b]
-        i+= 1
+        i += 1
     if 0 in opened_box:
         return False
     return True
